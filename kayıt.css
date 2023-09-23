@@ -1,0 +1,41 @@
+/* Temel stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* Başlık stil */
+h1 {
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+/* Paragraf stil */
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* İsteğe bağlı: Sayfa genelindeki bazı stiller */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* gereksizs stilleri sıfırlama */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* bütün sayfayı seçer */
+body {
+  padding: 50px;
+  font-family: 'poppins';
+}
+
+/* üst kısım */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-family: 'unbounded';
+}
+
+.header .nav {
+  display: flex;
+  gap: 30px;
+}
+
+.header .nav a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.header .nav a:hover {
+  color: crimson;
+  text-shadow: 0 0 30px crimson;
+}
+
+.header .sign {
+  text-decoration: none;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+.header .sign:hover {
+  background: black;
+  color: white;
+}
+
+/* Karşılama alanı > hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.hero .text-area {
+  max-width: 700px;
+}
+
+.text-area h1 {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'unbounded';
+}
+
+.text-area h1 span {
+  color: crimson;
+  text-shadow: 0 0 100px crimson;
+}
+
+.text-area p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+.hero img {
+  max-width: 500px;
+}
+
+/* Kutucuklar Alanı */
+.boxes {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: rgb(78, 78, 78);
+  border-radius: 20px;
+  gap: 10px;
+  padding: 40px;
+}
+
+.box {
+  background: black;
+  color: white;
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.box:hover {
+  /* sağ üste kaydırma */
+  transform: translate(10px, -10px);
+  box-shadow: 0 0 20px crimson;
+}
+
+.box img {
+  width: 50px;
+}
+
+.box p {
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+/* vr alanı */
+.vr-section {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.vr-section .text-area {
+  max-width: 600px;
+}
+
+.vr-section .text-area h1 {
+  font-size: 40px;
+}
+
+/* Alt Kısım */
+.footer {
+  background: rgb(39, 47, 47);
+  color: white;
+  padding: 100px;
+  border-radius: 20px;
+  margin: 150px auto;
+  max-width: 900px;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.4s;
+}
+
+.footer button:hover {
+  background: crimson;
+  color: white;
+}
+
+/* ekran bouyuna göre stil verm */
+@media (min-width: 1400px) {
+  body {
+    padding: 100px;
+  }
+}
